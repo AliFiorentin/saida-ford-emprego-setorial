@@ -187,7 +187,7 @@ $$\hat{\beta}^{(b)} = \frac{\displaystyle\sum_{mst} \tilde{X}_{mst}^{(b)}\, \til
 
 onde $\tilde{Y}_{mst}$ e $\tilde{X}_{mst}^{(b)}$ são os resíduos após remoção dos efeitos fixos. O $p$-valor empírico unilateral (com correção de suavização finita):
 
-$$p = \frac{\left|\left\{\hat{\beta}^{(b)} \leq \hat{\beta}_{\text{real}}\right\}\right| + 1}{B + 1}$$
+$$p = \frac{1 + \displaystyle\sum_{b=1}^{B} \mathbf{1}\!\left[\hat{\beta}^{(b)} \leq \hat{\beta}_{\text{real}}\right]}{B + 1}$$
 
 > **Resultado:** $p \approx 0{,}0005$ — o coeficiente real está na cauda extrema da distribuição placebo.
 
