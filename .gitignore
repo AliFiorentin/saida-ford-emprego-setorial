@@ -27,6 +27,12 @@ __pycache__/
 .RData
 .Rproj.user/
 
+# Claude Code
+.claude/
+.claude_cache/
+*.claude
+*.jsonl
+
 # Sistema
 .DS_Store
 Thumbs.db
