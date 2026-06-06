@@ -15,10 +15,6 @@
 
 This paper estimates the causal effect of Ford's industrial shutdown in Brazil, announced in 2021 and concentrated in the manufacturing plants of **Camaçari (BA)**, **Taubaté (SP)**, and **Horizonte (CE)**, on formal employment within the automotive complex. We utilize administrative microdata from the Brazilian *Relação Anual de Informações Sociais* (RAIS) for the 2014–2023 period, aggregated at the municipality × sector × year level to provide a precise micro-territorial analysis. The identification strategy relies on a triple-differences (DDD) design, exploiting simultaneous variation over time (pre/post-2021), across space (treated versus non-treated municipalities), and across sectors (automotive complex versus other economic sectors). The empirical specification includes high-dimensional fixed effects (municipality–year, sector–year, and municipality–sector) and municipality-clustered standard errors to ensure the robustness of the statistical inference. The main estimate is negative and statistically significant ($\hat{\beta} = -1.3992$; $p = 0.0034$), implying an approximate $75.3\%$ reduction in formal sectoral employment in the directly exposed locations after 2021. An event-study specification shows no differential dynamics prior to the treatment and a persistent contraction following the shock. Overall, the evidence suggests that Ford's exit represented a major local economic shock with persistent adverse effects on formal employment in the automotive complex in directly exposed areas.
 
-**Keywords:** Ford's Exit from Brazil · Automotive Sector · Local Economic Shock · Labor Market · Triple Differences-in-Differences
-
-**JEL Codes:** J23 · J65 · C23
-
 ---
 
 ## Main Results
