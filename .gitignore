@@ -27,6 +27,11 @@ __pycache__/
 .RData
 .Rproj.user/
 
+# Configuração local (caminhos e credenciais — não versionar)
+config.R
+config.do
+config.py
+
 # Claude Code
 .claude/
 .claude_cache/
