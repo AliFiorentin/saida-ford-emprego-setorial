@@ -31,6 +31,9 @@ __pycache__/
 config.R
 config.do
 config.py
+config.example.R
+config.example.do
+config.example.py
 
 # Claude Code
 .claude/

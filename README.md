@@ -185,7 +185,7 @@ O estimador por réplica via Frisch–Waugh–Lovell (FWL):
 
 $$\hat{\beta}^{(b)} = \frac{\displaystyle\sum_{mst} \tilde{X}_{mst}^{(b)}\, \tilde{Y}_{mst}}{\displaystyle\sum_{mst} \left(\tilde{X}_{mst}^{(b)}\right)^2}$$
 
-onde $\tilde{Y}_{mst}$ e $\tilde{X}_{mst}^{(b)}$ são os resíduos após remoção dos efeitos fixos. O $p$-valor empírico unilateral (com correção de suavização finita):
+onde $\tilde{Y}$ e $\tilde{X}^{(b)}$ são as variáveis após remoção (*demeaning*) dos efeitos fixos $\alpha_{m \times t}$, $\gamma_{s \times t}$ e $\delta_{m \times s}$. O $p$-valor empírico unilateral (com correção de suavização finita):
 
 $$p = \frac{1 + \displaystyle\sum_{b=1}^{B} \mathbf{1}\!\left[\hat{\beta}^{(b)} \leq \hat{\beta}_{\text{real}}\right]}{B + 1}$$
 
