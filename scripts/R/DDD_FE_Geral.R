@@ -4,7 +4,7 @@
 # ==============================================================================
 
 # 1) Pacotes -------------------------------------------------------------------
-setwd("C:/Users/Administrator/Documents/Shashinha")
+source("config.R"); setwd(PROJECT_ROOT)
 
 library(dplyr)
 library(tidyr)
@@ -208,3 +208,4 @@ p_space <- ggplot(data.frame(beta = betas_perm[is.finite(betas_perm)]), aes(x = 
 ggsave("outputs/PlaceboEspacial_420dpi.png", plot = p_space, width = 9, height = 6, dpi = 420)
 
 cat("\n[OK] Script finalizado. Figuras salvas com 420 DPI.\n")
+

@@ -10,7 +10,7 @@ library(stringr)
 library(writexl)
 
 # 1. Parâmetros e Configurações de Diretório
-setwd("C:/Users/Administrator/Documents/Shashinha")
+source("config.R"); setwd(PROJECT_ROOT)
 
 files <- c("dados/RAIS_Painel_BA.csv", "dados/RAIS_Painel_CE.csv", "dados/RAIS_Painel_SP.csv")
 data_sep <- ";"
@@ -86,3 +86,4 @@ lista_exportacao <- list(
 write_xlsx(lista_exportacao, path = "Estatisticas_Descritivas_Setorial_Final.xlsx")
 
 cat("\nO arquivo 'Estatisticas_Descritivas_Setorial_Final.xlsx' foi gerado com as métricas de mínimo.\n")
+

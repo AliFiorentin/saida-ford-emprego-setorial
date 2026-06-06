@@ -1,4 +1,4 @@
-﻿setwd("C:/Users/Administrator/Documents/Shashinha")
+﻿source("config.R"); setwd(PROJECT_ROOT)
 library(dplyr); library(tidyr); library(synthdid); library(ggplot2)
 
 files <- c("dados/RAIS_Painel_BA.csv","dados/RAIS_Painel_CE.csv","dados/RAIS_Painel_SP.csv")
@@ -73,4 +73,5 @@ if(!is.null(tau_sdid)){
 } else {
   cat("[FALHA] synthdid_estimate não convergiu — verifique log.\n")
 }
+
 

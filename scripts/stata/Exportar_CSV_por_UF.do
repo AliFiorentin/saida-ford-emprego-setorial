@@ -6,10 +6,13 @@
 clear all
 set more off
 
+// Carregar configuração local (caminhos do projeto)
+// Copie config.example.do para config.do na raiz e ajuste o caminho
+do "config.do"
+
 // 1. IMPORTAÇÃO E LIMPEZA
 // --------------------------------------------------------------------
-// Ajuste o caminho se necessário
-import delimited "C:\\Users\\Administrator\\Documents\\Shashinha\\dados\\RAIS_Final_Sem_FaixaEtaria.csv", delimiter(";") encoding("utf-8") case(preserve) clear
+import delimited "$PROJECT_ROOT\dados\RAIS_Final_Sem_FaixaEtaria.csv", delimiter(";") encoding("utf-8") case(preserve) clear
 
 // Renomear para facilitar
 rename Município cod_municipio
@@ -28,8 +31,6 @@ replace uf = ustrupper(strtrim(uf))
 
 // 3. DEFINIR A VARIÁVEL INDICADORA (GVAR = 1)
 // --------------------------------------------------------------------
-// Mantendo a lógica de marcar apenas o momento do choque com 1
-
 gen gvar = 0
 
 // A) COORTE 2021: Camaçari (BA) e Taubaté (SP) - Ford
@@ -40,7 +41,7 @@ replace gvar = 1 if cod_municipio == 230523 & ano >= 2022
 
 // 4. EXPORTAÇÃO DOS ARQUIVOS SEPARADOS
 // --------------------------------------------------------------------
-local outpath "C:\\Users\\Administrator\\Documents\\Shashinha\\dados"
+local outpath "$PROJECT_ROOT\dados"
 
 // Exportar CEARA
 export delimited using "`outpath'\RAIS_Painel_CE.csv" if uf == "CE", delimiter(";") replace

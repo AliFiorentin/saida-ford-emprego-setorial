@@ -1,4 +1,4 @@
-﻿setwd("C:/Users/Administrator/Documents/Shashinha")
+﻿source("config.R"); setwd(PROJECT_ROOT)
 library(dplyr); library(tidyr); library(did); library(ggplot2)
 
 files <- c("dados/RAIS_Painel_BA.csv","dados/RAIS_Painel_CE.csv","dados/RAIS_Painel_SP.csv")
@@ -64,4 +64,5 @@ if(!is.null(cs_out)){
 } else {
   cat("[FALHA] att_gt não convergiu — verifique o log.\n")
 }
+
 

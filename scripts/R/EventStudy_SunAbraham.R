@@ -1,4 +1,4 @@
-﻿setwd("C:/Users/Administrator/Documents/Shashinha")
+﻿source("config.R"); setwd(PROJECT_ROOT)
 library(dplyr); library(tidyr); library(fixest); library(ggplot2); library(broom); library(stringr)
 
 files <- c("dados/RAIS_Painel_BA.csv","dados/RAIS_Painel_CE.csv","dados/RAIS_Painel_SP.csv")
@@ -72,4 +72,5 @@ if(nrow(es_sa)>0){
   ggsave("outputs/SunAbraham_Event_420dpi.png", plot=p_sa, width=9, height=6, dpi=420)
 }
 cat("\n[OK] EventStudy_SunAbraham.R concluído.\n")
+
 

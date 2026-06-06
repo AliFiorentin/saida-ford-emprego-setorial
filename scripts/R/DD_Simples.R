@@ -1,4 +1,4 @@
-﻿setwd("C:/Users/Administrator/Documents/Shashinha")
+﻿source("config.R"); setwd(PROJECT_ROOT)
 library(dplyr); library(tidyr); library(fixest); library(ggplot2); library(broom); library(stringr)
 
 files <- c("dados/RAIS_Painel_BA.csv","dados/RAIS_Painel_CE.csv","dados/RAIS_Painel_SP.csv")
@@ -61,4 +61,5 @@ p_dd <- ggplot(es_tbl, aes(x=Ano, y=estimate)) +
 ggsave("outputs/DD_Simples_Event_420dpi.png", plot=p_dd, width=9, height=6, dpi=420)
 
 cat("\n[OK] DD_Simples.R concluído.\n")
+
 

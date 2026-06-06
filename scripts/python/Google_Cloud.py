@@ -1,11 +1,18 @@
 import basedosdados as bd
 import pandas as pd
 import os
+import sys
 
-# --- CONFIGURAÇÃO OBRIGATÓRIA ---
-# Substitua pelo ID do seu projeto no Google Cloud
-# Se não tiver um, crie em: https://console.cloud.google.com/projectselector2/home/dashboard
-BILLING_PROJECT_ID = "caged-480722"
+# Carregar configuração local (credenciais GCP)
+# Copie config.example.py para config.py na raiz e configure BILLING_PROJECT_ID
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+try:
+    from config import BILLING_PROJECT_ID
+except ImportError:
+    raise ImportError(
+        "Arquivo config.py não encontrado. "
+        "Copie config.example.py para config.py e configure BILLING_PROJECT_ID."
+    )
 
 # Diretório para salvar os arquivos
 OUTPUT_DIR = "dados_rais"

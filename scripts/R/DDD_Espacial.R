@@ -4,7 +4,7 @@
 # ==============================================================================
 
 # 1) Pacotes -------------------------------------------------------------------
-setwd("C:/Users/Administrator/Documents/Shashinha")
+source("config.R"); setwd(PROJECT_ROOT)
 
 # Pacotes tradicionais
 library(dplyr)
@@ -179,4 +179,5 @@ for (setor_real in setores_para_testar) {
 cat("\n==============================================================================\n")
 
 cat("\n[OK] Teste de setores finalizado.\n")
+
 
