@@ -187,7 +187,7 @@ $$\hat{\beta}^{(b)} = \frac{\displaystyle\sum_{mst} \tilde{X}_{mst}^{(b)}\, \til
 
 onde $\tilde{Y}_{mst}$ e $\tilde{X}_{mst}^{(b)}$ são os resíduos após remoção dos efeitos fixos. O $p$-valor empírico unilateral (com correção de suavização finita):
 
-$$p = \frac{\#\left\{\hat{\beta}^{(b)} \leq \hat{\beta}_{\text{real}}\right\} + 1}{B + 1}$$
+$$p = \frac{\left|\left\{\hat{\beta}^{(b)} \leq \hat{\beta}_{\text{real}}\right\}\right| + 1}{B + 1}$$
 
 > **Resultado:** $p \approx 0{,}0005$ — o coeficiente real está na cauda extrema da distribuição placebo.
 
@@ -239,9 +239,9 @@ $$\hat{\tau}^{\text{SDID}} = \arg\min_{\tau,\,\alpha,\,\beta} \sum_{m,t} \left(Y
 
 </div>
 
-> † $t = -1{,}91$; EP *jackknife* conservador com $N_{\text{tratados}} = 3$. Significância não paramétrica confirmada pelo placebo de Fisher ($p \approx 0{,}0005$).
->
-> Os seis estimadores convergem em faixa de apenas 1,8 p.p. (−73,6% a −75,4%), abarcando métodos com premissas de identificação fundamentalmente distintas.
+† $t = -1{,}91$; EP *jackknife* conservador com $N_{\text{tratados}} = 3$. Significância não paramétrica confirmada pelo placebo de Fisher ($p \approx 0{,}0005$). \* $p < 0{,}05$; \*\* $p < 0{,}01$.
+
+Os seis estimadores convergem em faixa de apenas 1,8 p.p. (−73,6% a −75,4%), abarcando métodos com premissas de identificação fundamentalmente distintas.
 
 ---
 
@@ -314,8 +314,6 @@ Rscript scripts/R/EventStudy_SunAbraham.R
 Rscript scripts/R/Callaway_SantAnna.R
 Rscript scripts/R/SDID.R
 ```
-
-Todos os scripts R executam `setwd("C:/Users/Administrator/Documents/Shashinha")` internamente e leem dados de `dados/` e gravam figuras em `outputs/`.
 
 ## Dependências
 
