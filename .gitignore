@@ -1,0 +1,32 @@
+# Dados brutos e painéis (grandes, sensíveis)
+dados/
+
+# PDFs de referência (204 MB)
+referencias/
+
+# Figuras geradas pelos scripts (regeneráveis)
+outputs/
+
+# LaTeX auxiliares
+artigo/*.aux
+artigo/*.bbl
+artigo/*.blg
+artigo/*.log
+artigo/*.out
+artigo/*.synctex.gz
+artigo/*.fls
+artigo/*.fdb_latexmk
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# R temporários
+.Rhistory
+.RData
+.Rproj.user/
+
+# Sistema
+.DS_Store
+Thumbs.db
