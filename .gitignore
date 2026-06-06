@@ -32,6 +32,7 @@ __pycache__/
 .claude_cache/
 *.claude
 *.jsonl
+CLAUDE.md
 
 # Sistema
 .DS_Store
