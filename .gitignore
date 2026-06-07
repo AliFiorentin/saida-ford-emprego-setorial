@@ -16,6 +16,8 @@ artigo/*.out
 artigo/*.synctex.gz
 artigo/*.fls
 artigo/*.fdb_latexmk
+artigo/*.bcf
+artigo/*.run.xml
 
 # Python cache
 __pycache__/
